@@ -1,0 +1,18 @@
+
+<header>
+  Welcome to the main website, <%= current_user.email %>
+  <%= button_to "Sign out", destroy_user_session_path, method: :delete, style: "float: right;" %>
+</header>
+
+<div>
+ <%= content_tag :p, "Users" %>
+
+ <table>
+  <thead>
+    <th>email</th>
+  </thead>
+  <tbody>
+    <%= render @users %>
+  </tbody>
+ </table>
+</div>
