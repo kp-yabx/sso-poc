@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "welcome#index"
 
-  get 'saml_login', to: "application#saml_login"
-  post 'saml_callback', to: "application#saml_callback"
+  scope :saml do
+    get 'metadata', to: "saml#metadata"
+    get 'login', to: "saml#login", as: "saml_login"
+    post 'callback', to: "saml#callback"
+  end
 end
