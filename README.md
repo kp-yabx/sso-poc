@@ -12,7 +12,7 @@
 3. Run migration: `bin/rails db:migrate`
 4. Run development: `bin/rails server`
 5. Run Docker compose from project root: `docker compose up -d`
-6. Access the project using localhost: [localhost|http://localhost:3000]
+6. Access the project using localhost: [localhost](http://localhost:3000)
 
 ### User flow:
 1. Sign and login to view the users present
